@@ -95,7 +95,11 @@ const answers = [
  */
 
   // 選択肢の中からランダムになるはず
+
+  function assessment{
 　var random = Math.floor( Math.random() * answers.length )
+    }
+
   const index = var random
   let result = answers[index];
 
