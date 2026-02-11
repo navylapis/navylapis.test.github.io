@@ -93,9 +93,9 @@ const answers = [
   // 選択肢の中からランダムになるはず
 
   function assessment(userName){
-　var random = Math.floor( Math.random() * answers.length )
+　const random = Math.floor( Math.random() * answers.length )
 
-  const index = var random
+  const index = const random
   let result = answers[index];
 
   result = result.replaceAll('###userName###', userName);
