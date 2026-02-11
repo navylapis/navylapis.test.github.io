@@ -19,7 +19,7 @@ assessmentButton.addEventListener(
   // headerDivision の作成
   const headerDivision = document.createElement('div');
   headerDivision.setAttribute('class', 'card-header text-bg-primary');
-  headerDivision.innerText = '占い結果';
+  headerDivision.innerText = 'おみくじ結果';
 
   // bodyDivision の作成
   const bodyDivision = document.createElement('div');
@@ -43,13 +43,13 @@ assessmentButton.addEventListener(
     const anchor = document.createElement('a');
     const hrefValue =
       'https://twitter.com/intent/tweet?button_hashtag=' +
-      encodeURIComponent('あなたのいいところ') +
+      encodeURIComponent('おみくじ結果') +
       '&ref_src=twsrc%5Etfw';
   
     anchor.setAttribute('href', hrefValue);
     anchor.setAttribute('class', 'twitter-hashtag-button');
     anchor.setAttribute('data-text', result);
-    anchor.innerText = 'Tweet #占い結果';
+    anchor.innerText = 'Tweet #おみくじ結果';
   
     tweetDivision.appendChild(anchor);
 
@@ -102,7 +102,7 @@ const answers = [
   return result;
 }
 
-// テストを行う関数
+// ただの飾り　名残
 function test() {
   console.log('診断結果の文章のテスト');
 
